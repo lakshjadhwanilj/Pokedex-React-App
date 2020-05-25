@@ -1,0 +1,29 @@
+.App {
+    background: url('pattern.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: #fafafa;
+    padding: 4rem;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #eb2c29;
+}
+
+.logo {
+    min-height: 4rem;
+    min-width: 4rem;
+}
+
+button {
+    color: #eb2c29;
+    background-color: #fff;
+    border: 2px solid #eb2c29;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+button:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
