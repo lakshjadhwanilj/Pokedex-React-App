@@ -35,7 +35,7 @@ function PokemonCard(props) {
     const pokemonName = props.pokemon.name;
 
     return (
-        <div className='col-md-3 col-sm-4 col-6 mb-5'>
+        <div className='col-md-3 col-sm-4 mb-5'>
             <StyledLink to={`pokemon/${pokemonIndex}`}>
                 <Card className='card'>
                     <h5 className="card-header">{pokemonIndex}</h5>

@@ -53,8 +53,8 @@ function PokemonList() {
     return (
         <div className="container">
             <div className='p-4 text-center'>
-                <button className="btn mx-3" onClick={prev}>Prev</button>
-                <button className="btn mx-3" onClick={next}>Next</button>
+                <button className="btn m-3" onClick={prev}>Prev</button>
+                <button className="btn m-3" onClick={next}>Next</button>
             </div>
             <div className='row'>
                 {
@@ -72,8 +72,8 @@ function PokemonList() {
                 }
             </div>
             <div className='p-4 text-center'>
-                <button className="btn mx-3" onClick={prev}>Prev</button>
-                <button className="btn mx-3" onClick={next}>Next</button>
+                <button className="btn m-3" onClick={prev}>Prev</button>
+                <button className="btn m-3" onClick={next}>Next</button>
             </div>
         </div>
     );
