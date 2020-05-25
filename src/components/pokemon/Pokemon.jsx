@@ -23,7 +23,6 @@ function Pokemon(props) {
         weight: '',
         abilities: [],
         eggGroups: [],
-        themeColor: '#eb2c29'
     });
 
     React.useEffect(() => {
@@ -71,7 +70,6 @@ function Pokemon(props) {
             const abilities = pokemonInfo.abilities.map(ability => (
                 ability.ability.name.charAt(0).toUpperCase() + ability.ability.name.slice(1)
             ));
-            const themeColor = `${TYPE_COLORS[types[-1]]}`;
 
             // Get pokemon description
             let pokemonDescription = await getPokemonDescription(pokemonSpeciesUrl);
@@ -106,7 +104,6 @@ function Pokemon(props) {
                 weight: weight,
                 abilities: abilities,
                 eggGroups: eggGroups,
-                themeColor: themeColor
             });
         }
         fetchData();
@@ -136,12 +133,12 @@ function Pokemon(props) {
                         </div>
                         <div className="col-md-9">
                             <h4 className='mx-auto'>{pokemonData.name}</h4>
-                            <StatsProgress key='HP' name='HP' color={pokemonData.themeColor} value={pokemonData.stats.hp} />
-                            <StatsProgress key='ATTACK' name='ATTACK' color={pokemonData.themeColor} value={pokemonData.stats.attack} />
-                            <StatsProgress key='DEFENSE' name='DEFENSE' color={pokemonData.themeColor} value={pokemonData.stats.defense} />
-                            <StatsProgress key='SPEED' name='SPEED' color={pokemonData.themeColor} value={pokemonData.stats.speed} />
-                            <StatsProgress key='SPECIALATTACK' name='SPECIAL ATTACK' color={pokemonData.themeColor} value={pokemonData.stats.specialAttack} />
-                            <StatsProgress key='SPECIALDEFENSE' name='SPECIAL DEFENSE' color={pokemonData.themeColor} value={pokemonData.stats.specialDefense} />
+                            <StatsProgress key='HP' name='HP' value={pokemonData.stats.hp} />
+                            <StatsProgress key='ATTACK' name='ATTACK' value={pokemonData.stats.attack} />
+                            <StatsProgress key='DEFENSE' name='DEFENSE' value={pokemonData.stats.defense} />
+                            <StatsProgress key='SPEED' name='SPEED' value={pokemonData.stats.speed} />
+                            <StatsProgress key='SPECIALATTACK' name='SPECIAL ATTACK' value={pokemonData.stats.specialAttack} />
+                            <StatsProgress key='SPECIALDEFENSE' name='SPECIAL DEFENSE' value={pokemonData.stats.specialDefense} />
                         </div>
                         <div className="row mt-2 text-center">
                             <div className="col mx-auto">
