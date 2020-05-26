@@ -12,7 +12,7 @@ function Navbar() {
         <div className='navbar navbar-expand-md navbar-dark fixed-top'>
             <a className='navbar-brand ml-3' href='#'>
                 <Sprite src={pokemon} alt="" />
-                Pokedex
+                Pokédex
             </a>
         </div>
     );
