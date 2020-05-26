@@ -12,6 +12,35 @@
     background-color: #eb2c29;
 }
 
+.search-row {
+    width: 50%;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: none;
+    color: #fff;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #fff;
+    border-color: inherit;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+
+}
+
 button {
     color: #eb2c29;
     background-color: #fff;
@@ -21,4 +50,16 @@ button {
 
 button:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 575px) {
+    .search-row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .search-row {
+        width: 75%;
+    }
 }
